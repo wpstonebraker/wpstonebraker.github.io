@@ -238,7 +238,7 @@ a {
   -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
   -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
   transition: color 0.2s ease, border-bottom-color 0.2s ease;
-  border-bottom: dotted 1px;
+  /* border-bottom: dotted 1px; */
   color: inherit;
   text-decoration: none;
 }
@@ -4117,12 +4117,25 @@ body.is-mobile.landing #footer {
   background-color: #1d242a;
 }
 
+#about-me-box {
+  width: 500px;
+  margin: auto;
+}
+
 #skills-box {
   margin: auto;
-  width: 50vw;
+  width: 300px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.skills-row {
+  display: flex;
+  width: 300px;
+  /* margin: auto; */
+  padding: 20px;
+  justify-content: space-evenly;
 }
 
 #skills-box i {
@@ -4140,4 +4153,44 @@ body.is-mobile.landing #footer {
 
 .tech-label {
   font-style: italic;
+}
+#projects-label-box {
+  display: flex;
+}
+
+#projects-label {
+  margin: auto;
+  padding-top: 80px;
+}
+
+.project-overlay {
+  opacity: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  transition: 0.4s;
+  z-index: 3;
+}
+
+.project-overlay:hover {
+  opacity: 1;
+}
+
+.project-links-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-links {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 40px;
 }

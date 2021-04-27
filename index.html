@@ -33,11 +33,11 @@
               <a href="#menu" class="menuToggle"><span>Menu</span></a>
               <div id="menu">
                 <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="generic.html">Generic</a></li>
-                  <li><a href="elements.html">Elements</a></li>
-                  <li><a href="#">Sign Up</a></li>
-                  <li><a href="#">Log In</a></li>
+                  <li><a href="#one">About Me</a></li>
+                  <li><a href="#two">Projects</a></li>
+                  <li><a href="#three">Skills</a></li>
+                  <!-- <li><a href="#">Sign Up</a></li>
+                  <li><a href="#">Log In</a></li> -->
                 </ul>
               </div>
             </li>
@@ -65,6 +65,7 @@
       <section id="one" class="wrapper style1 special">
         <div class="inner">
           <header class="major">
+            <h2>About Me</h2>
             <!-- <h2>
               Arcu aliquet vel lobortis ata nisl<br />
               eget augue amet aliquet nisl cep donec
@@ -75,34 +76,62 @@
               fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
               ullamcorper.
             </p> -->
-            <p>
-              Howdy! I'm a software engineer with a lifelong passion for
-              computers. It has been a lifelong journey of learning, from
-              building simple websites in computer camp as a kid to creating a
-              full stack music streaming site that my friends and I use daily.
-              <br />
-              <br />
-              Whether it is a solo project, or working on a team, I love to
-              write, talk about, and refactor code. Some of my passions aside
-              from writing code and learning new technologies are cooking,
-              hiking, playing music, seeing live music, and being a dad.
-            </p>
+            <div id="about-me-box">
+              <p>
+                Howdy! I'm a software engineer with a passion for computers. It
+                has been a lifelong journey of learning, from building simple
+                websites in computer camp as a kid to creating a full stack
+                music streaming site that my friends and I use daily.
+                <br />
+                <br />
+                Whether it is a solo project, or working on a team, I love to
+                write, talk about, and refactor code. Some of my passions aside
+                from writing code and learning new technologies are cooking,
+                hiking, playing music, seeing live music, and being a dad.
+                <br />
+                <br />
+              </p>
+            </div>
           </header>
           <ul class="icons major">
             <li>
-              <span class="icon fa-gem major style1"
+              <a href="./Paul_Stonebraker_Resume.pdf" target="_blank">
+                <i class="far fa-file-alt"></i>
+                <p>Resume</p>
+                <!-- <span class="icon fa-gem major style1"
+                  ><span class="label">Lorem</span></span
+                  > -->
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/wpstonebraker" target="_blank">
+                <i class="fab fa-github"></i>
+                <p>Github</p>
+                <!-- <span class="icon fa-gem major style1"
                 ><span class="label">Lorem</span></span
-              >
+              > -->
+              </a>
             </li>
             <li>
-              <span class="icon fa-heart major style2"
+              <a
+                href="https://www.linkedin.com/in/paul-stonebraker/"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin-in"></i>
+                <p>Linked In</p>
+                <!-- <span class="icon fa-heart major style2"
                 ><span class="label">Ipsum</span></span
-              >
+              > -->
+              </a>
             </li>
             <li>
-              <span class="icon solid fa-code major style3"
+              <a href="https://angel.co/u/paul-stonebraker" target="_blank">
+                <i class="fab fa-angellist"></i>
+                <p>AngelList</p>
+                <!-- <span class="icon solid fa-code major style3"
                 ><span class="label">Dolor</span></span
-              >
+              > -->
+              </a>
             </li>
           </ul>
         </div>
@@ -110,8 +139,31 @@
 
       <!-- Two -->
       <section id="two" class="wrapper alt style2">
+        <div class="inner">
+          <header id="projects-label-box" class="major">
+            <h2 id="projects-label">Projects</h2>
+          </header>
+        </div>
         <section class="spotlight">
-          <div class="image"><img src="images/phancamp.gif" alt="" /></div>
+          <div class="image">
+            <div class="project-overlay">
+              <div class="project-links-box">
+                <h2>PHANCAMP</h2>
+                <div class="project-links">
+                  <a href="http://phancamp.herokuapp.com/" target="_blank">
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a
+                    href="https://github.com/wpstonebraker/PhanCamp"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <img src="images/phancamp.gif" alt="" />
+          </div>
           <div class="content">
             <h2>phancamp<br /></h2>
             <p class="tech-label">React, Redux, Rails, PostgreSQL</p>
@@ -119,10 +171,35 @@
               A bandcamp clone where you can download, upload, and stream music
               either through an API or from AWS.
             </p>
+            <!-- <div class="project-links">
+              <p>LIVE</p>
+              <p>REPO</p>
+            </div> -->
           </div>
         </section>
         <section class="spotlight">
-          <div class="image"><img src="images/spacedad.gif" alt="" /></div>
+          <div class="image">
+            <div class="project-overlay">
+              <div class="project-links-box">
+                <h2>SPACE DAD</h2>
+                <div class="project-links">
+                  <a
+                    href="http://www.paulstonebraker.com/spaceman_game/"
+                    target="_blank"
+                  >
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a
+                    href="https://github.com/wpstonebraker/spaceman_game"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <img src="images/spacedad.gif" alt="" />
+          </div>
           <div class="content">
             <h2>Space Dad<br /></h2>
             <p class="tech-label">JavaScript, Canvas, Aseprite</p>
@@ -134,6 +211,25 @@
         </section>
         <section class="spotlight">
           <div class="image">
+            <div class="project-overlay">
+              <div class="project-links-box">
+                <h2>PHANCAMP</h2>
+                <div class="project-links">
+                  <a
+                    href="http://progress-slacker.herokuapp.com/"
+                    target="_blank"
+                  >
+                    <i class="fas fa-link"></i>
+                  </a>
+                  <a
+                    href="https://github.com/berthornhill/progress-slacker"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
             <img src="images/Progress_Slacker.gif" alt="" />
           </div>
           <div class="content">
@@ -158,20 +254,26 @@
             <h2>Skills</h2>
             <br />
             <div id="skills-box">
-              <i class="devicon-react-original-wordmark"></i>
-              <i class="devicon-redux-original"></i>
-              <i class="devicon-rails-plain-wordmark"></i>
-              <i class="devicon-ruby-plain"></i>
-              <i class="devicon-javascript-plain"></i>
-              <i class="devicon-jquery-plain-wordmark"></i>
-              <i class="devicon-ubuntu-plain-wordmark"></i>
-              <i class="devicon-amazonwebservices-plain-wordmark"></i>
-              <i class="devicon-css3-plain-wordmark"></i>
-              <i class="devicon-html5-plain-wordmark"></i>
-              <i class="devicon-postgresql-plain-wordmark"></i>
-              <i class="devicon-nodejs-plain-wordmark"></i>
-              <i class="devicon-sass-original"></i>
-              <i class="devicon-heroku-plain-wordmark"></i>
+              <div class="skills-row">
+                <i class="devicon-react-original-wordmark"></i>
+                <i class="devicon-redux-original"></i>
+                <i class="devicon-rails-plain-wordmark"></i>
+                <i class="devicon-ruby-plain"></i>
+                <i class="devicon-javascript-plain"></i>
+              </div>
+              <div class="skills-row">
+                <i class="devicon-jquery-plain-wordmark"></i>
+                <i class="devicon-ubuntu-plain-wordmark"></i>
+                <i class="devicon-amazonwebservices-plain-wordmark"></i>
+                <i class="devicon-css3-plain-wordmark"></i>
+                <i class="devicon-html5-plain-wordmark"></i>
+              </div>
+              <div class="skills-row">
+                <i class="devicon-postgresql-plain-wordmark"></i>
+                <i class="devicon-nodejs-plain-wordmark"></i>
+                <i class="devicon-sass-original"></i>
+                <i class="devicon-heroku-plain-wordmark"></i>
+              </div>
             </div>
           </header>
         </div>
@@ -344,6 +446,7 @@
             >
           </li>
         </ul> -->
+
         <ul class="copyright">
           <li>&copy; Paul Stonebraker</li>
           <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
