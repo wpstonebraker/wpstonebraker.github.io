@@ -4118,29 +4118,37 @@ body.is-mobile.landing #footer {
 }
 
 #about-me-box {
-  width: 500px;
+  width: 1000px;
+  max-width: 75vw;
   margin: auto;
+}
+#skills-box-outer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 #skills-box {
-  margin: auto;
-  width: 300px;
+  /* margin: auto; */
+  width: 50vw;
+  max-width: 75vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 .skills-row {
   display: flex;
-  width: 300px;
+  width: 50vw;
   /* margin: auto; */
-  padding: 20px;
+  padding: 1vw;
   justify-content: space-evenly;
 }
 
 #skills-box i {
-  font-size: 50px;
-  margin: 20px;
+  font-size: 4vw;
+  margin: 2vw;
 }
 
 #footer-contact-box {
@@ -4189,7 +4197,7 @@ body.is-mobile.landing #footer {
 }
 
 .project-links {
-  width: 35%;
+  width: 35vw;
   display: flex;
   justify-content: space-between;
   font-size: 40px;
